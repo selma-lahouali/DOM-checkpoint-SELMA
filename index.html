@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="dark-mode">
+    <!-- header /header /header /header /header /header /header /header /header -->
+    <header>
+      <div class="main-bar">
+        <img src="/images/logo.png" alt="logo not found" class="logo" />
+        <div class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#h1-m">Menu</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li>
+              <a href="./menu.html" target="_blank" rel="noopener noreferrer"
+                >Online Order</a
+              >
+            </li>
+            <li><a href="#contact">Contact us</a></li>
+            <li><a onmouseover="sideBaron()" href="#">About us </a></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="side-bar"
+        onmouseover="sideBaron()"
+        onmouseleave="sideBaroff()"
+      >
+        <ul>
+          <li><a href="#who-are-we">Who are we</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#employee">Our employees</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- slide /slide /slide /slide /slide /slide /slide /slide /slide /slide/ slide -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <h1>Grilled Menu</h1>
+          <img src="/images/slider1.jpg" alt="img not found" />
+        </div>
+        <div class="swiper-slide">
+          <h1>Try Our Pizza</h1>
+          <img src="/images/slider pizza .jpg" alt="img not found" />
+        </div>
+        <div class="swiper-slide">
+          <h1>How About Our Vegetarian Menu</h1>
+          <img src="/images/veggy-slider.jpg" alt="img not found" />
+        </div>
+        <div class="swiper-slide">
+          <h1>Give It To Temptation WIth Our Dessets</h1>
+          <img src="/images/dessert slider.jpg" alt="img not found" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- about us /about us about us /about us about us /about us about us /about us -->
+    <div class="about-us">
+      <!-- who are we /who are we /who are we /who are we /who are we /who are we /who are we-->
+      <div id="who-are-we">
+        <h1>Who Are We</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          maxime, fuga iste saepe vel laboriosam sint molestias excepturi odio
+          esse nobis facere odit ratione, vero non quidem atque hic tenetur
+          aspernatur nisi officiis mollitia laudantium provident ut. Blanditiis
+          nesciunt modi eum iure in suscipit architecto voluptates doloribus
+          consequuntur fugiat quibusdam recusandae iste magnam, saepe accusamus
+          dignissimos rerum ipsum mollitia.
+        </p>
+      </div>
+      <!-- history /history /history /history /history /history /history /history -->
+      <div id="history">
+        <h1>Our History</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          maxime, fuga iste saepe vel laboriosam sint molestias excepturi odio
+          esse nobis facere odit ratione, vero non quidem atque hic tenetur
+          aspernatur nisi officiis mollitia laudantium provident ut. Blanditiis
+          nesciunt modi eum iure in suscipit architecto voluptates doloribus
+          consequuntur fugiat quibusdam recusandae iste magnam, saepe accusamus
+          dignissimos rerum ipsum mollitia dolorum praesentium excepturi
+        </p>
+      </div>
+      <!-- employee /employee /employee /employee /employee /employee /employee /employee -->
+      <div id="employee">
+        <h1>Our employee</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          maxime, fuga iste saepe vel laboriosam sint molestias excepturi odio
+          esse nobis facere odit ratione, vero non quidem atque hic tenetur
+          aspernatur nisi officiis mollitia laudantium provident ut. Blanditiis
+          nesciunt modi eum iure in suscipit architecto voluptates doloribus
+          consequuntur fugiat quibusdam recusandae iste magnam, saepe accusamus
+          dignissimos rerum ipsum mollitia dolorum praesentium excepturi
+          debitis. Expedita fuga Blanditiis nesciunt modi eum iure in suscipit
+        </p>
+      </div>
+    </div>
+    <!-- menu /menu /menu  /menu  /menu  /menu  /menu  /menu  /menu  /menu  /menu  /menu  /menu  /menu  /menu  /menu  -->
+    <h1 id="h1-m">MENU</h1>
+    <div id="menu">
+      <!--1 card-->
+      <div class="plat">
+        <img src="./images/grill c1.png" alt=" not found" class="card-image" />
+        <div class="card-info">
+          <h4>grilled skewers</h4>
+          <p>$80</p>
+        </div>
+      </div>
+      <!--2 card-->
+      <div class="plat">
+        <img src="./images/grill c2.png" alt="img " class="card-image" />
+        <div class="card-info">
+          <h4>grilled steak</h4>
+          <p>$100</p>
+        </div>
+      </div>
+      <!--3 card-->
+      <div class="plat">
+        <img src="./images/pizza c1.jpg" alt="img " class="card-image" />
+        <div class="card-info">
+          <h4>Peperoni pizza</h4>
+          <p>$90</p>
+        </div>
+      </div>
+      <!--4 card-->
+      <div class="plat">
+        <img src="./images/pizza c2.webp" alt="img " class="card-image" />
+        <div class="card-info">
+          <h4>Olive pizza</h4>
+          <p>$70</p>
+        </div>
+      </div>
+      <!--5 card-->
+      <div class="plat">
+        <img src="./images/veggy c1.webp" alt="img " class="card-image" />
+        <div class="card-info">
+          <h4>Rice Salade</h4>
+          <p>$95</p>
+        </div>
+      </div>
+      <!--6 card-->
+      <div class="plat">
+        <img src="./images/veggy c2.webp" alt="img " class="card-image" />
+        <div class="card-info">
+          <h4>Oat salad</h4>
+          <p>$110</p>
+        </div>
+      </div>
+      <!--7 card-->
+      <div class="plat">
+        <img src="./images/gateau c1.webp" alt="img" class="card-image" />
+        <div class="card-info">
+          <h4>Cocolat cake</h4>
+          <p>$50</p>
+        </div>
+      </div>
+      <!-- 8 card-->
+      <div class="plat">
+        <img src="./images/gateau c2.jpg" alt="img" class="card-image" />
+        <div class="card-info">
+          <h4>Stawberrie cak</h4>
+          <p>$200</p>
+        </div>
+      </div>
+    </div>
+    <!-- reservation form /reservation form /reservation form /reservation form /reservation form -->
+    <form
+      name="myForm"
+      onsubmit="return validateform()"
+      novalidate
+      id="reservation"
+    >
+      <h1>Reservation</h1>
+      <div>
+        <label>Name</label>
+        <input type="text" name="name" placeholder="enter your name" />
+      </div>
+      <div>
+        <label>E.mail</label>
+        <input type="email" name="email" placeholder="enter your e.mail" />
+      </div>
+      <div>
+        <label>Phone</label>
+        <input type="number" name="phone" placeholder="enter your phone nbr" />
+      </div>
+      <div>
+        <label>Date</label>
+        <input type="date" name="date" />
+      </div>
+      <div class="time">
+        <label>Time</label>
+        <input type="time" name="time" />
+      </div>
+      <input type="submit" value="register" id="submit" />
+    </form>
+    <!-- dark/light mode -->
+    <button onclick="toggleMode()" id="btn-dark-light">Dark / Light</button>
+    <!-- up button /up button /up button /up button /up button /up button /up button /up button /up button /up button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- contact us /contact us /contact us /contact us /contact us /contact us /contact us /contact us /contact us -->
+    <form
+      name="contact"
+      onsubmit="return validateContact()"
+      novalidate
+      id="contact"
+    >
+      <h1>Contact Us</h1>
+      <div>
+        <label>Name :</label>
+        <input type="text" name="yourName" placeholder="enter your name" />
+      </div>
+      <div>
+        <label class="lab-contact">E.mail :</label>
+        <input type="email" name="yourEmail" placeholder="enter your email" />
+      </div>
+      <div>
+        <input type="text" name="message" class="message" />
+      </div>
+      <div>
+        <input type="submit" value="send" id="submit2" />
+      </div>
+    </form>
+
+    <!-- footer /footer /footer /footer /footer /footer /footer /footer /footer /footer /footer /footer /footer-->
+    <footer>
+      copyright,. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Repudiandae, mollitia.
+    </footer>
+  </body>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      initialSlide: 0,
+      loop: true,
+      centeredSlides: true,
+      keyboard: {
+        enabled: true,
+      },
+      cssMode: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      on: {
+        slideChangeTransitionStart: function () {
+          if (swiper.isEnd) {
+            swiper.params.speed = 0;
+            swiper.slideTo(0, 0, false);
+          } else {
+            swiper.params.speed = 300;
+          }
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</html>
