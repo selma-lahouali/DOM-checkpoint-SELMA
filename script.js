@@ -10,21 +10,73 @@ function sideBaroff() {
 // dark/light mode /dark/light mode /dark/light mode /dark/light mode/dark /light mode /dark/light mode
 function toggleMode() {
   const body = document.body;
+
+  // Toggle between dark and light mode classes
   body.classList.toggle("dark-mode");
   body.classList.toggle("light-mode");
+
+  // Adjust the display of sun and moon icons
+  const sunIcon = document.querySelector("#btn-dark-light .sun");
+  const moonIcon = document.querySelector("#btn-dark-light .moon");
+
+  if (body.classList.contains("dark-mode")) {
+    sunIcon.style.display = "none";
+    moonIcon.style.display = "block";
+  } else {
+    sunIcon.style.display = "block";
+    moonIcon.style.display = "none";
+  }
+
+  // Adjust the display of logos
+  const darkLogo = document.querySelector(".dark-logo");
+  const lightLogo = document.querySelector(".light-logo");
+
+  if (body.classList.contains("dark-mode")) {
+    darkLogo.style.display = "block";
+    lightLogo.style.display = "none";
+  } else {
+    darkLogo.style.display = "none";
+    lightLogo.style.display = "block";
+  }
+
+  // Update styles for other elements
   let swiperSlides = document.querySelectorAll(".swiper-slide");
   swiperSlides.forEach((swiperSlide) => {
-    swiperSlide.style.color = "white";
+    swiperSlide.style.color = body.classList.contains("dark-mode")
+      ? "white"
+      : "black";
   });
+
   let navBar = document.querySelector(".main-bar");
   navBar.style.backgroundColor = body.classList.contains("dark-mode")
     ? "rgb(11, 28, 50)"
     : "white";
+
   let navLinks = document.querySelectorAll(".main-bar .nav a");
   navLinks.forEach((link) => {
     link.style.color = body.classList.contains("dark-mode") ? "white" : "black";
   });
 }
+
+// Set default mode on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const body = document.body;
+
+  // Set dark mode as default
+  body.classList.add("dark-mode");
+
+  // Ensure correct icons are visible
+  const sunIcon = document.querySelector("#btn-dark-light .sun");
+  const moonIcon = document.querySelector("#btn-dark-light .moon");
+  const darkLogo = document.querySelector(".dark-logo");
+  const lightLogo = document.querySelector(".light-logo");
+
+  sunIcon.style.display = "none";
+  moonIcon.style.display = "block";
+  darkLogo.style.display = "block";
+  lightLogo.style.display = "none";
+});
+
 // top button /top button /top button /top button /top button /top button /top button /top button /top button
 let mybutton = document.querySelector("#myBtn");
 window.onscroll = function () {
