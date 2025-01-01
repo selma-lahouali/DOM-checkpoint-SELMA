@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>the place</title>
+    <title>THE PLACE</title>
     <link rel="stylesheet" href="style.css" />
 
     <link
@@ -38,7 +38,12 @@
       </div>
       <!-- side bare / side bare / side bare / side bare / side bare -->
       <div class="menuSideBar">
-        <img onmouseover="sideBaron()" src="images/menu.png" alt="menu" />
+        <img
+  onmouseover="sideBaron()"
+  onclick="toggleSidebar()"
+  src="images/menu.png"
+  alt="menu"
+/>
         <div
           class="side-bar"
           onmouseover="sideBaron()"
@@ -301,8 +306,8 @@
 
     <!-- <footer>
       copyright,. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Repudiandae, mollitia.
-    </footer> -->
+      Repudiandae, mollitia. -->
+    </footer>
   </body>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -315,10 +320,10 @@
         enabled: true,
       },
       cssMode: true,
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       on: {
         slideChangeTransitionStart: function () {
           if (swiper.isEnd) {

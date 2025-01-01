@@ -1,12 +1,42 @@
-// side bar // side bar // side bar // side bar
+// Ensure sidebar is hidden by default on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const side = document.querySelector(".side-bar");
+  side.style.display = "none"; // Ensure sidebar is hidden by default
+});
+
+// Show sidebar on hover or click
 function sideBaron() {
   const side = document.querySelector(".side-bar");
   side.style.display = "flex";
 }
+
+// Hide sidebar
 function sideBaroff() {
   const side = document.querySelector(".side-bar");
   side.style.display = "none";
 }
+
+// Toggle sidebar visibility on click
+function toggleSidebar() {
+  const side = document.querySelector(".side-bar");
+  if (side.style.display === "flex") {
+    side.style.display = "none";
+  } else {
+    side.style.display = "flex";
+  }
+}
+
+// Hide sidebar when clicking outside of it
+document.addEventListener("click", (event) => {
+  const side = document.querySelector(".side-bar");
+  const menuIcon = document.querySelector(".menuSideBar img");
+
+  // Check if the click happened outside the sidebar and menu icon
+  if (!side.contains(event.target) && !menuIcon.contains(event.target)) {
+    side.style.display = "none";
+  }
+});
+
 // dark/light mode /dark/light mode /dark/light mode /dark/light mode/dark /light mode /dark/light mode
 function toggleMode() {
   const body = document.body;
